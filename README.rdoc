@@ -3,8 +3,4 @@
 http://www.fillmurray.com
 
 === To Do
-- cache directives
-- match images based on landscape/portrait
-- gallery of source images
-- ability to pick specific images
 - FIND MORE IMAGES OF BILL MURRAY
