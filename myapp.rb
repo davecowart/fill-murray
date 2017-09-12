@@ -21,6 +21,13 @@ get '/:width/:height' do
   return_image(width, height)
 end
 
+get '/:width/:height/' do
+  width = params[:width].to_i
+  height = params[:height].to_i
+  gabba.page_view("Show", "#{width}/#{height}")
+  return_image(width, height)
+end
+
 get '/c/:width/:height' do
   width = params[:width].to_i
   height = params[:height].to_i
@@ -28,7 +35,21 @@ get '/c/:width/:height' do
   return_image(width,height,:crazy)
 end
 
+get '/c/:width/:height/' do
+  width = params[:width].to_i
+  height = params[:height].to_i
+  gabba.page_view("ShowCrazy", "c/#{width}/#{height}")
+  return_image(width,height,:crazy)
+end
+
 get '/g/:width/:height' do
+  width = params[:width].to_i
+  height = params[:height].to_i
+  gabba.page_view("ShowGray", "g/#{width}/#{height}")
+  return_image(width,height,:grayscale)
+end
+
+get '/g/:width/:height/' do
   width = params[:width].to_i
   height = params[:height].to_i
   gabba.page_view("ShowGray", "g/#{width}/#{height}")
