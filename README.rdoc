@@ -2,5 +2,4 @@
 
 http://www.fillmurray.com
 
-=== To Do
-- FIND MORE IMAGES OF BILL MURRAY
+*Merged into [PlaceCage](https://github.com/davecowart/placecage)
